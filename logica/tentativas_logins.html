@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+	var loginInformado = prompt("Informe seu login");
+	var senhaInformada = prompt("Informe sua senha");
+	var tentativas = 1;
+		
+	while (tentativas <= 3) {
+		if( loginCadastrado != loginInformado || senhaCadastrada != senhaInformada ) {
+			alert("Login inválido. Tente novamente");
+				if (tentativas == 3) {
+					alert("Limite de tentativas ultrapassado");
+				break
+				};
+			var loginInformado = prompt("Informe seu login");
+			var senhaInformada = prompt("Informe sua senha");
+			tentativas = tentativas + 1;
+		} else { 
+			alert("Bem-vindo ao sistema " + loginInformado);
+			break
+			};
+		};
+</script>
