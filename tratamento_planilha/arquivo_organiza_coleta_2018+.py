@@ -1,8 +1,8 @@
 entrada_do_usuario = input("Por favor entre com o nome do arquivo csv: ")
 
 
-with open(entrada_do_usuario + ".csv", 'r') as arquivoliz:
-    linhas = arquivoliz.readlines()
+with open(entrada_do_usuario + ".csv", 'r') as arquivo_bruto:
+    linhas = arquivo_bruto.readlines()
 
 arquivo_saida = entrada_do_usuario + "_seleciona_colunas.csv"
 print(arquivo_saida)
@@ -37,8 +37,8 @@ codigo_municipio_selecionado = ["290570", "290650", "291005", "291610", "291920"
                                 "292740", "292920", "292950", "293070", "293320"]
 
 
-with open(arquivo_saida, 'r') as arquivoliz:
-    linhas = arquivoliz.readlines()
+with open(arquivo_saida, 'r') as arquivo_tratado:
+    linhas = arquivo_tratado.readlines()
 
 valid_lines = []
 
