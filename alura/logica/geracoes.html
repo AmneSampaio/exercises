@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+	}
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+	var intervaloGeracao = 28;
+	var primeiroAno = 1500;
+	var anoAtual = 2021;
+	var quantosAnos = anoAtual - primeiroAno + 1;
+	var quantidadeGeracao = Math.round(quantosAnos/intervaloGeracao);
+	mostra(" Contando do ano de " + primeiroAno + " até " + 
+			anoAtual + ", temos um total de " + quantosAnos + 
+			" anos.");
+	mostra(" Sabe-se que a cada " + intervaloGeracao + 
+			" anos, uma nova geração nasce.");
+	mostra("Por isso, neste período de " + 
+			quantosAnos + " anos, seguindo essa hipótese teríamos, aproximadamente " + 
+			quantidadeGeracao + " gerações.");
+	
+</script>

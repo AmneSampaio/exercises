@@ -1,0 +1,20 @@
+package br.com.bytebank.teste;
+
+public class TesteContas {
+	
+	public static void main(String[] args) throws br.com.bytebank.modelo.SaldoInsuficienteException{
+		
+		br.com.bytebank.modelo.ContaCorrente cc = new br.com.bytebank.modelo.ContaCorrente(111, 222);
+		cc.deposita(100.0);
+	
+		br.com.bytebank.modelo.ContaPoupanca cp = new br.com.bytebank.modelo.ContaPoupanca(333, 444);
+		cp.deposita(100.0);
+		
+		cc.transfere(50.0, cp);
+	
+		System.out.println("CC:" + cc.getSaldo());
+		System.out.println("CP:" + cp.getSaldo());
+	}
+	
+	
+}

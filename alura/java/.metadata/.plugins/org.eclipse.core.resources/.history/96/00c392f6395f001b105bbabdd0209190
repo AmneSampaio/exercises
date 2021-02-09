@@ -1,0 +1,11 @@
+
+public class Fatorial {
+	public static void main(String[] args) {
+		int FatorialAnterior=1;
+		for (int numero=0; numero<=10; numero++) {
+			int Fatorial = (numero+1)*FatorialAnterior;
+			FatorialAnterior = Fatorial;
+			System.out.println("O Fatorial de " + numero + " é " + Fatorial);
+		}
+	}
+}

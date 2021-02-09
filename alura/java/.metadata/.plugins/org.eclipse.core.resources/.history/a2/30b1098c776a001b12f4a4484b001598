@@ -1,0 +1,12 @@
+package modelo;
+
+
+public class modelo.SaldoInsuficienteException extends Exception{
+
+	public SaldoInsuficienteException(String msg) {
+		
+		super(msg);
+		
+	}
+	
+}

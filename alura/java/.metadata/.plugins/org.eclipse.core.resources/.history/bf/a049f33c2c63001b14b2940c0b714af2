@@ -1,0 +1,27 @@
+
+public class TesteReferencias {
+
+	public static void main(String[] args) {
+		Funcionario g1 = new Gerente();
+		
+		g1.setNome("Amne");
+		g1.setSalario(4000.0); 
+		ControleBonificacao controle = new ControleBonificacao();
+		controle.registra(g1);
+
+//		Funcionario momo = new Funcionario();
+//		momo.setNome("Momo");
+//		momo.setSalario(10000.0);
+//		controle.registra(momo);
+//		
+//		Funcionario joao = new EditorVideo();
+//		joao.setNome("joao");
+//		joao.setSalario(1000.0);
+//		controle.registra(joao);
+//		
+		System.out.println(controle.getSoma());
+		
+		
+	}
+
+}
